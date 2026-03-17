@@ -1,5 +1,31 @@
 [
   {
+    "app_name": "stage-wallet",
+    "name": "STAGE",
+    "image": "https://test.com/logo.png",
+    "about_url": "https://test.com",
+    "universal_url": "https://test.com/ton-connect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "stage"
+      },
+      {
+        "type": "sse",
+        "url": "https://connect.ton.org/bridge",
+        "webhook": "http://206.189.97.195:5555"
+      }
+    ],
+    "platforms": ["ios", "android"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 255,
+        "extraCurrencySupported": false
+      }
+    ]
+  }
+  {
     "app_name": "telegram-wallet",
     "name": "Wallet",
     "image": "https://wallet.tg/images/logo-288.png",
